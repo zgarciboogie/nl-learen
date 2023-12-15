@@ -1,0 +1,47 @@
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    /* 8 images per row */
+    grid-gap: 10px;
+    /* Adjust the space between images */
+}
+
+.image-container {
+    position: relative;
+    /* Updated: Relative positioning for the container */
+    display: block;
+    overflow: hidden;
+    /* Needed for the zoom effect */
+    border: 3px solid transparent;
+    /* Transparent border */
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.image-container:hover img {
+    transform: scale(1.1);
+    /* Zoom in effect */
+    border-color: black;
+    /* Black border on hover */
+}
+
+.image-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    /* Text color, choose what contrasts well with your images */
+    font-size: 20px;
+    font-weight: bold;
+    /* Adjust font size as needed */
+    text-align: center;
+    width: 100%;
+    /* Ensure the text spans the width of the image */
+    pointer-events: none;
+    /* Allows clicking through the text */
+}

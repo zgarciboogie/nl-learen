@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lichaamsdelen/Body Parts</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
+    <link rel="stylesheet" type="text/css" href="assets/styles/body_parts.css">
+</head>
+
+<body>
+    <div id="container">
+        <!-- Background image -->
+        <img src="assets/images/human_body.png" alt="Background Image" class="stretch">
+        <!-- Used to display the cursor position -->
+        <div id="cursorPosition"></div>
+        <!-- Go back to home -->
+        <button id="backToHome" onclick="location.href='index.html'">&#8592;</button>
+        <!-- Toggle show/hide cursor position -->
+        <button id="toggleButton">Wissel cursorcoordinaten</button>
+
+        <!-- Hotspots here -->
+        <div class="hotspot" style="top: 15.5%; left: 33.7%;" onmouseover="showTooltip(1, event)"></div>
+        <div class="hotspot" style="top: 18.2%; left: 35.3%;" onmouseover="showTooltip(2, event)"></div>
+        <div class="hotspot" style="top: 19.4%; left: 32.8%;" onmouseover="showTooltip(3, event)"></div>
+        <div class="hotspot" style="top: 19.2%; left: 34.55%;" onmouseover="showTooltip(4, event)"></div>
+        <div class="hotspot" style="top: 19.75%; left: 34.35%;" onmouseover="showTooltip(5, event)"></div>
+        <div class="hotspot" style="top: 21.1%; left: 34.6%;" onmouseover="showTooltip(6, event)"></div>
+        <div class="hotspot" style="top: 25%; left: 34.6%;" onmouseover="showTooltip(7, event)"></div>
+        <div class="hotspot" style="top: 22%; left: 34.6%;" onmouseover="showTooltip(8, event)"></div>
+        <div class="hotspot" style="top: 27%; left: 30.5%;" onmouseover="showTooltip(9, event)"></div>
+        <div class="hotspot" style="top: 30%; left: 33%;" onmouseover="showTooltip(10, event)"></div>
+        <div class="hotspot" style="top: 42%; left: 34.6%;" onmouseover="showTooltip(11, event)"></div>
+        <div class="hotspot" style="top: 43%; left: 29%;" onmouseover="showTooltip(12, event)"></div>
+        <div class="hotspot" style="top: 52.2%; left: 27.6%;" onmouseover="showTooltip(13, event)"></div>
+        <div class="hotspot" style="top: 52.8%; left: 26%;" onmouseover="showTooltip(14, event)"></div>
+        <div class="hotspot" style="top: 56%; left: 31.8%;" onmouseover="showTooltip(15, event)"></div>
+        <div class="hotspot" style="top: 64.8%; left: 32%;" onmouseover="showTooltip(16, event)"></div>
+        <div class="hotspot" style="top: 82.9%; left: 31.7%;" onmouseover="showTooltip(17, event)"></div>
+        <div class="hotspot" style="top: 84.5%; left: 38%;" onmouseover="showTooltip(18, event)"></div>
+        <div class="hotspot" style="top: 40.7%; left: 60.2%;" onmouseover="showTooltip(19, event)"></div>
+        <div class="hotspot" style="top: 29.9%; left: 65.4%;" onmouseover="showTooltip(20, event)"></div>
+        <div class="hotspot" style="top: 48%; left: 64%;" onmouseover="showTooltip(21, event)"></div>
+
+        <!-- Tooltips here -->
+        <div class="tooltip" id="tooltip1">
+            <!-- <span class="close" onclick="closeTooltip(1)">X</span> -->
+            Hoofd
+        </div>
+        <div class="tooltip" id="tooltip2">Oog</div>
+        <div class="tooltip" id="tooltip3">Oor</div>
+        <div class="tooltip" id="tooltip4">Neus</div>
+        <div class="tooltip" id="tooltip5">Neusgat</div>
+        <div class="tooltip" id="tooltip6">
+            <p>Mond</p>
+            <p>Lippen</p>
+        </div>
+        <div class="tooltip" id="tooltip7">Nek</div>
+        <div class="tooltip" id="tooltip8">Kin</div>
+        <div class="tooltip" id="tooltip9">Schouder</div>
+        <div class="tooltip" id="tooltip10">Borst</div>
+        <div class="tooltip" id="tooltip11">Buik</div>
+        <div class="tooltip" id="tooltip12">Arm</div>
+        <div class="tooltip" id="tooltip13">Handpalm</div>
+        <div class="tooltip" id="tooltip14">Vinger</div>
+        <div class="tooltip" id="tooltip15">Leg</div>
+        <div class="tooltip" id="tooltip16">Been</div>
+        <div class="tooltip" id="tooltip17">Foot</div>
+        <div class="tooltip" id="tooltip18">Voet</div>
+        <div class="tooltip" id="tooltip19">Elleboog</div>
+        <div class="tooltip" id="tooltip20">Rug</div>
+        <div class="tooltip" id="tooltip21">Kont/billen</div>
+    </div>
+    <script src="assets/scripts/body_parts.js"></script>
+</body>
+
+</html>
